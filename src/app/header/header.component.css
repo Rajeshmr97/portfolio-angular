@@ -1,0 +1,141 @@
+header{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+    
+}
+
+.top{
+    color: #061724;
+    font-family: monospace;
+    font-size:x-large;
+    font-weight:900;
+    width:100%;
+    margin-bottom: 0;
+
+    
+}
+
+
+.typewriter{
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+
+}
+.container{
+    padding:10px 10px;
+    color: whitesmoke;
+    font-weight: 500;
+    width :fit-content;
+    margin-bottom: 0;
+
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+header a{
+    float: left;
+    color: #d4f1f9;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.profile{
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+
+.circle{
+    position: absolute;
+    background: #d4f1f9;
+    width: 350px; height: 180px;
+    margin-left: 0;
+	top: -135px; left:-90px ;
+	border-radius: 200 px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+    z-index: -1;
+
+}
+
+  
+.drop {
+    position: absolute;
+      width: 20px;
+      height: 20px;
+    top: 20px;
+    left: 170px;
+    
+    margin: 0 auto;
+      background: #d4f1f9;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+    -moz-animation-name: drip;
+    -webkit-animation-name: drip;
+    animation-name: drip;
+    -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
+    -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
+    animation-timing-function: cubic-bezier(1,0,.91,.19);
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+  
+  .drop:before {
+    content: "";
+    position: absolute;
+    width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 30px solid #d4f1f9;
+    top: -22px;
+  }
+
+  
+  @keyframes drip {
+      to {
+        top: 190px;
+      }
+  }
+
+
+/* DEMO-SPECIFIC STYLES */
+
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }

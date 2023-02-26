@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    margin: auto;
+    padding: 0;
+    background-color: #061724;
+}
+
+p{
+    margin:0%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+
+/* COMMON */
+
+.p-flex{
+    display: flex;
+}
+.p-flex-align-center{
+
+    align-items: center;
+}
+.p-flex-jc-sb{
+    justify-content: space-between;
+}
+
+
+/* WRAPPER CLASS*/
+
+.p-wrapper{
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+.p-wrapper::before{
+    content: '';
+    background-color: #d4f1f9;
+    margin-left: 3.5px;
+    margin-top: 0;
+    height: 5px;
+    width: 700px;
+    border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+
+.p-wrapper::after{
+    content: '';
+    background-color: #d4f1f9;
+    margin-left: 0;
+    margin-top: -15vh;
+    height: 600px;
+    width: 5px;
+    border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+  
