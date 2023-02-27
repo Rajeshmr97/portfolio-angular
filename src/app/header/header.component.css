@@ -67,11 +67,19 @@
   padding: 20px 20px;
   color:#d4f1f9;
   text-decoration: none;
+  font-family: "Kaushan Script";
+  font-size:large;
+  
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #d4f1f9;
+  border-radius: 20 px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  font-family: "Kaushan Script";
+  font-size:large;
   color:#061724;
 }
 
@@ -101,7 +109,7 @@
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 144px }
+  to { width: 155px }
 }
 
 /* The typewriter cursor effect */
@@ -127,6 +135,7 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
+
 }
 
 .header .menu-icon .navicon {
@@ -136,6 +145,7 @@
   position: relative;
   transition: background .2s ease-out;
   width: 18px;
+  
 }
 
 .header .menu-icon .navicon:before,
@@ -147,6 +157,7 @@
   position: absolute;
   transition: all .2s ease-out;
   width: 100%;
+  
 }
 
 .header .menu-icon .navicon:before {
