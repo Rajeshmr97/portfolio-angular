@@ -1,141 +1,214 @@
-header{
-    margin-top: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 0;
-    
+
+
+.p-wrapper{
+  position: relative;
+  margin-top: 0;
+  top:0px;
+  left:-4px;
+  margin-left: 0px;
+  margin-right: 0px;
+  content: '';
+  background-color: #d4f1f9;
+  margin-left: 3.5px;
+  margin-top: 0;
+  height: 5px;
+  width: 270px;
+  border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+  position: absolute;
+  z-index: -1;
 }
 
-.top{
-    color: #061724;
-    font-family: monospace;
-    font-size:x-large;
-    font-weight:900;
-    width:100%;
-    margin-bottom: 0;
 
-    
-}
-
-
-.typewriter{
-
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-
-}
-.container{
-    padding:10px 10px;
-    color: whitesmoke;
-    font-weight: 500;
-    width :fit-content;
-    margin-bottom: 0;
-
-}
-
-header ul{
-    display: flex;
-    align-items: center;
-}
-
-header li {
-    padding-left: 10px;
-    padding-right: 10px;
-
-}
-
-header a{
-    float: left;
-    color: #d4f1f9;
-    text-align: center;
-    text-decoration: none;
-
-}
-
-.profile{
-    width: 40px;
-    border-radius: 50%;
-
+.p-wrapper::before{
+  content: '';
+  background-color: #d4f1f9;
+  margin-left: 0;
+  margin-top: -24.2px;
+  height: 125px;
+  width: 5px;
+  border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+  position: absolute;
+  z-index: -1;
 }
 
 
 .circle{
-    position: absolute;
-    background: #d4f1f9;
-    width: 350px; height: 180px;
-    margin-left: 0;
-	top: -135px; left:-90px ;
-	border-radius: 200 px;
-	-webkit-border-radius: 200px;
-	-moz-border-radius: 200px;
-    z-index: -1;
+  position: absolute;
+  background: #d4f1f9;
+  width: 350px; height: 180px;
+  margin-left: 0;
+  top: -135px; left:-130px ;
+  border-radius: 200 px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  z-index: -1;
 
 }
 
-  
-.drop {
-    position: absolute;
-      width: 20px;
-      height: 20px;
-    top: 20px;
-    left: 170px;
-    
-    margin: 0 auto;
-      background: #d4f1f9;
-      -moz-border-radius: 20px;
-      -webkit-border-radius: 20px;
-      border-radius: 20px;
-    -moz-animation-name: drip;
-    -webkit-animation-name: drip;
-    animation-name: drip;
-    -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
-    -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
-    animation-timing-function: cubic-bezier(1,0,.91,.19);
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    z-index: -1;
+
+
+/* header */
+
+.header {
+
+  width:100%;
+  margin-bottom: 0;
+  margin-top: 0px;
+  margin-left: 3px;
+  margin-right: 20px;
+  padding: 0;
+  overflow: hidden;
 }
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  color:#d4f1f9;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #d4f1f9;
+  color:#061724;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: #061724;
+  font-family: monospace;
+  font-size:x-large;
+  font-weight:900;
+  margin-top: 6px;
+  margin-left: 10px;
   
-  .drop:before {
-    content: "";
-    position: absolute;
-    width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 30px solid #d4f1f9;
-    top: -22px;
-  }
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin-right: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 
   
-  @keyframes drip {
-      to {
-        top: 190px;
-      }
-  }
+}
 
 
-/* DEMO-SPECIFIC STYLES */
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 144px }
+}
 
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #d4f1f9;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #d4f1f9;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+  .header li a {
+    padding: 20px 30px;
   }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
