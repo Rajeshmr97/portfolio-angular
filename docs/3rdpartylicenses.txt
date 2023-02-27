@@ -10,6 +10,9 @@ MIT
 @angular/router
 MIT
 
+@fontsource/kaushan-script
+MIT
+
 bootstrap
 MIT
 The MIT License (MIT)

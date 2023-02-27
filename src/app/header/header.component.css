@@ -1,33 +1,12 @@
 
-
+/* Wrapper */
 .p-wrapper{
-  position: relative;
-  margin-top: 0;
-  top:0px;
-  left:-4px;
-  margin-left: 0px;
-  margin-right: 0px;
-  content: '';
-  background-color: #d4f1f9;
-  margin-left: 3.5px;
-  margin-top: 0;
-  height: 5px;
-  width: 270px;
-  border-radius: 20px;
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-}
-
-
-.p-wrapper::before{
   content: '';
   background-color: #d4f1f9;
   margin-left: 0;
   margin-top: -24.2px;
-  height: 125px;
-  width: 5px;
+  height: 150px;
+  width: 10px;
   border-radius: 20px;
 -webkit-border-radius: 20px;
 -moz-border-radius: 20px;
@@ -41,14 +20,25 @@
   background: #d4f1f9;
   width: 350px; height: 180px;
   margin-left: 0;
-  top: -135px; left:-130px ;
+  top: -125px; left:-120px ;
   border-radius: 200 px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   z-index: -1;
 
 }
-
+.center{
+  position: absolute;
+  background: #061724;
+  width: 25px; height: 25px;
+  margin-left: 0;
+  top: 55px; left:10px ;
+  border-radius: 200 px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  z-index: -1;
+  box-shadow: -10px -10px 0 0 #d4f1f9;
+}
 
 
 /* header */
@@ -56,12 +46,12 @@
 .header {
 
   width:100%;
-  margin-bottom: 0;
-  margin-top: 0px;
-  margin-left: 3px;
+  margin-bottom: 0px;
+  margin-left: -5px;
   margin-right: 20px;
-  padding: 0;
+  padding: 5px;
   overflow: hidden;
+  
 }
 
 .header ul {
@@ -69,6 +59,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
+  
 }
 
 .header li a {
@@ -89,17 +80,16 @@
   float: left;
   text-decoration: none;
   color: #061724;
-  font-family: monospace;
-  font-size:x-large;
+  font-family: "Kaushan Script";
+  font-size:large;
   font-weight:900;
   margin-top: 6px;
-  margin-left: 10px;
-  
+  margin-left: 20px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin-right: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .05em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
