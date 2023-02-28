@@ -300,27 +300,59 @@
   align-items: center;
   right: 0px;
   top: 25px;
-  padding-left: 40px;
+
   position: absolute;
   float: right;
   text-decoration: none;
   color: #d4f1f9;
   font-size:30px;
-  margin-right: 49.5%;
+  margin-right: 43%;
   }
 
 
   .header .links{
   display: flex;
-  right: 2%;
+  padding-right: 10px;
   top: 25px;
-  padding-left: 40px;
   position: absolute;
   float: right;
   text-decoration: none;
   color: #d4f1f9;
   font-size:30px;
-  margin-right: 50%;
+  margin-right: 44%;
+  }
+
+  .p-wrapper{
+    height: 190px;
+    width: 10px;
+  }
+  .circle{
+    position: absolute;
+    background: #d4f1f9;
+    width: 500px; height: 180px;
+  }
+
+  .header .logo {
+    margin-left:50px;
+    font-size: x-large;
+    margin-top: 2px;
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret .5s step-end infinite
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 200px }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .header ul {
+    margin-right: 80px;
   }
 }
 
