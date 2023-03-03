@@ -32,7 +32,7 @@
     border-radius: 10%;
     background: #061724;
     box-shadow: 0px 0px 0 20px #061724, 0 0 0 0px #061724;
-    animation: border 8s ease 1 forwards;
+    animation: border 10s ease 1 forwards;
     cursor: none;
     align-items: center;
 
@@ -50,22 +50,25 @@
     width: 10px;
     height: 10px;
     cursor: none;
-    animation: opacity 4.5s ease-in 0.2s ;
+    animation: opacity 5.5s ease-in 0.2s ;
     opacity: 0;
   }
 
 @keyframes border{
   0% {    box-shadow:  0px 0px 0 20px #061724, 0 0 0 10px #fff; }
   25% {    box-shadow:  0px -135px 0 20px #061724, 0 0 0 10px #fff; } 
-  50% {    box-shadow:  0px -20px 0 20px #061724, 0 0 0 5px #fff; } 
-  75% { box-shadow:  0px -3px 0 20px #061724, 0 0 0 1px #fff;}
-  100% { box-shadow:  0px 0px 0 20px #061724, 0 0 0 0px #fff;}
+  50% {    box-shadow:  0px -20px 0 20px #061724, 0 0 0 5px #64ffda; } 
+  75% { box-shadow:  0px -3px 0 20px #061724, 0 0 0 1px #64ffda;}
+  100% { box-shadow:  0px 0px 0 20px #061724, 0 0 0 0px #64ffda;}
   
 }
 
 @keyframes opacity {
-  0% {    opacity: 0; }
+  0% {    opacity: 0;color: white; }
+  40%{color: white;}
   50% {   opacity: 1; }
+  70% {   opacity: 1; }
+  80%{opacity: 1;color: #64ffda;}
 }
 
   
