@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { SplasScreenComponent } from './components/splas-screen/splas-screen.component';
 
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,7 @@ import { SplasScreenComponent } from './components/splas-screen/splas-screen.com
     AppRoutingModule,
     NgxTypedJsModule
   ],
-  providers: [],
+  providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
