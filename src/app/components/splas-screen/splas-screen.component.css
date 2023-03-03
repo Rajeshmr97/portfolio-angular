@@ -68,7 +68,8 @@
   40%{color: white;}
   50% {   opacity: 1; }
   70% {   opacity: 1; }
-  80%{opacity: 1;color: #64ffda;}
+  80%{text-shadow: -0 0 2px #80fcdf,-0 0 3px #80fcdf,-0 0 4px #80fcdf;opacity: 1;color: #64ffda;}
+  85%{opacity: 1;color: #64ffda;}
 }
 
   
