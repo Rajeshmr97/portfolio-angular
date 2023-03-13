@@ -19,7 +19,7 @@
 }
 .center{
   position: absolute;
-  background: #061724;
+  background: transparent;
   width: 25px; height: 25px;
   margin-left: 0;
   top: 55px; left:15px ;
