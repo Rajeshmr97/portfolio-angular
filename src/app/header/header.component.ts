@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit,OnDestroy{
     this.startPosition = window.scrollY;
     this.scroll$ = fromEvent(window, 'scroll').subscribe(e => {
       const currentPosition = window.scrollY;
-      if(window.scrollY > 0) {
+      if(window.scrollY > 100) {
         if(this.startPosition > currentPosition) {
           this.navbarhide = false;
           this.navbarapperar = true;
