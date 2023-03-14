@@ -226,8 +226,8 @@ img, svg {
     align-items: center;
     height: 100%;
     padding-top: 350px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     vertical-align: top;
     max-width: 100vw;
 
@@ -246,14 +246,19 @@ img, svg {
     border-radius: 10px;
     width: 95%;
     position: relative;
-    padding: 20px 20px;
+    padding: 0px 0px;
     box-shadow: 10px 10px 30px -10px #000000;
 
 
 }
 
 
+.wrapper-about
+{
+    display: block;
+    padding: 20px 20px;
 
+}
 .About h2{
     display: flex;
     font-family: 'Josefin Sans', sans-serif;
@@ -309,11 +314,7 @@ li.arrow::before {
   }
       
 
-.wrapper-about
-{
-    display: block;
 
-}
 
 
 .about-img{
@@ -323,6 +324,7 @@ li.arrow::before {
     display:grid ;
     align-items:center;
     justify-content: center;
+    overflow: hidden;
 
 
 }
@@ -405,7 +407,7 @@ li.arrow::before {
     border-radius: 20px;
     top: -295px;
     left: -27px;
-    background: white;
+    background: #d4f1f9;
     z-index: 11;
     border: 1px solid black;
     box-shadow: 10px 10px 30px -10px #000000;
@@ -436,7 +438,7 @@ li.arrow::before {
     border-radius: 20px;
     top: -366px;
     left: 149px;
-    background: white;
+    background: #d4f1f9;
     z-index: 11;
     border: 1px solid black;
     box-shadow: 10px 10px 30px -10px #000000;
@@ -453,7 +455,32 @@ li.arrow::before {
     position: relative;
 
 }
+.row{
+    overflow: hidden;
+}
+.middle-logo{ 
+    
+    align-self: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
 
+}
+
+.box-shape{
+    background: #d4f1f9;
+    height: 100px;
+    min-width: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 30px -10px #000000;
+}
+.data-science{
+    padding-left: 0px;
+}
 /* Transformation */
 @media (min-width: 48em) {
     main.fillHeight {
@@ -546,6 +573,19 @@ li.arrow::before {
         position: relative;
 
     }
+    .middle-logo{ 
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 400px;
+        align-self: center;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        
+    
+    }
 
 
 
@@ -555,3 +595,23 @@ li.arrow::before {
 }
 
 
+
+@media (max-width: 576px){
+
+    .container{
+        width:90%;
+    }
+
+    .order-sm-2 {
+        order: 2 !important;
+    }
+
+    .order-sm-1 {
+        order: 1 !important;
+    }
+    
+    .order-sm-3 {
+        order: 3 !important;
+    }
+
+}

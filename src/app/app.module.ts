@@ -10,6 +10,7 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
 import { SplasScreenComponent } from './components/splas-screen/splas-screen.component';
 
 import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxTypedJsModule
+    NgxTypedJsModule,
+    NgbModule
   ],
   providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

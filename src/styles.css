@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import "@fontsource/kaushan-script";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
 body{
 
