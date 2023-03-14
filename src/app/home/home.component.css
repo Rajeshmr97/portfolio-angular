@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+
 .p-wrapper{
     content: '';
     background-color: #d4f1f9;
@@ -247,26 +252,26 @@ img, svg {
 
 }
 
-h1, .h1{
-    color: #038f6e;
-}
+
 
 .About h2{
     display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 23px;
     font-size: 40px;
     font-weight: 600;
     color: #061724;
     line-height: 1.1;
-    align-self: center;
+    align-self: left;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    align-content: left;
+    justify-content: left;
 }
 
 
 .About p {
-    color: #4c515c;
+    
     margin: 20px 0px 0px;
 
     letter-spacing: .05em;
@@ -276,6 +281,33 @@ h1, .h1{
     margin: 0px;
     font-size: clamp(40px, 8vw, 80px);
 }
+
+
+ul {
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+  }
+      
+
+li.arrow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 5px;
+    width: 5px;
+    border: 1px solid #23af8d;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+  }
+      
 
 .wrapper-about
 {
@@ -314,7 +346,7 @@ h1, .h1{
     content: '';
     top: 59px;
     left: 10px;
-    background: #64ffda;
+    background: #23af8d;
     width: 230px;
     height: 200px;
     overflow: hidden;
@@ -365,7 +397,7 @@ h1, .h1{
 .experiance{
     content: '';
     align-items: center;
-    padding:5px 8px;
+    justify-content: center;
     display: flex;
     position: relative;
     width: 130px;
@@ -379,6 +411,19 @@ h1, .h1{
     box-shadow: 10px 10px 30px -10px #000000;
 }
 
+.About .year{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:clamp(10px, 8vw, 30px) ;
+    margin-left: 16px;
+    margin-top: 5px;
+    
+}
+
+.About .plus{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #23af8d;
+    font-size: 32px;
+}
 
 .Projects{
     content: '';
@@ -440,7 +485,8 @@ h1, .h1{
 
     .wrapper-about
     {
-        width: 50%;
+        padding-left: 20px;
+        min-width: 50%;
         display: inline-block;
 
     }
@@ -448,6 +494,7 @@ h1, .h1{
         float: right;
         height: 400px;
         min-width: 50%;
+        
 
         display:grid ;
         align-items:center;
@@ -470,14 +517,15 @@ h1, .h1{
 
     .background-circle{
         content: '';
-        top: 63px;
-        left: 9px;
-        background: #64ffda;
+        top: 59px;
+        left: 10px;
+        background: #23af8d;
         width: 230px;
         height: 200px;
         overflow: hidden;
         border-radius: 50%;
         position: relative;
+        transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
 
     }
     .pattern{
