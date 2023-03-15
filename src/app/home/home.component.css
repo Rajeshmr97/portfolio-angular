@@ -522,7 +522,7 @@ li.arrow::before {
 }
 
 .Skills h1{
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     color: #061724;
@@ -539,6 +539,8 @@ li.arrow::before {
     display:inline-block;
     vertical-align:top;
     width:31%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     
 }
 
